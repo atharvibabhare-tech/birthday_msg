@@ -24,13 +24,13 @@ if st.button("Open Your Surprise 💝"):
 
     col1, col2 = st.columns(2)
 
-with col1:
-    st.image("photo1.jpeg", caption="My sunshine ☀️")
+    with col1:
+        st.image("photo1.jpeg", caption="My sunshine ☀️")
 
-with col2:
-    st.image("photo2.jpeg", caption="My happiness 💕")
+    with col2:
+        st.image("photo2.jpeg", caption="My happiness 💕")
 
-st.image("photo3.jpeg", caption="Forever us ❤️")
+    st.image("photo3.jpeg", caption="Forever us ❤️")
 
-st.markdown("---")
-st.markdown("💌 Made with love, just for you Bae.")
+    st.markdown("---")
+    st.markdown("💌 Made with love, just for you Bae.")
