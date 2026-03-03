@@ -17,7 +17,7 @@ frameborder="0" allow="autoplay"></iframe>
 
 def slow_text(text):
     placeholder = st.empty()
-    full_text = "LOVE YOU KASTURI"
+    full_text = "💋"
     for char in text:
         full_text += char
         placeholder.markdown(full_text)
@@ -43,7 +43,7 @@ if st.button("Open Your Surprise Bae 💝"):
     st.markdown("## 💞 Our Journey of Friendship ")
 
     start_date = datetime(2023, 11, 20)  # CHANGE THIS TO YOUR REAL DATE
-    today = datetime.now(2026, 3, 17)
+    today = datetime.now()
     days_together = (today - start_date).days
 
     st.success(f"We have been together for 3 beautiful years together and in those 3yrs too many things get change between us but one thing is common that will never change is SUPPORT for each other 💕")
