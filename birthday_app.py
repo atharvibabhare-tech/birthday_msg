@@ -5,13 +5,13 @@ st.set_page_config(page_title="Birthday Surprise Bae 💖", layout="centered")
 
 st.title("🎉 A Special Surprise 🎁")
 
-name = st.text_input(" Atharvi 💕")
+name = st.text_input(" From Atharvi 💕")
 
 if st.button("Open Your Surprise 💝"):
     st.balloons()
     time.sleep(1)
 
-    st.markdown(f"## 🎂 Happy Birthday {Kasturi} 💖")
+    st.markdown(f"## 🎂 Happy Birthday Kasturi 💖")
     st.markdown("### You are the most precious person in my life 💕")
 
     st.write("""
