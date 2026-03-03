@@ -15,12 +15,12 @@ src="https://www.youtube.com/embed/2Vv-BfVoq4g?autoplay=1"
 frameborder="0" allow="autoplay"></iframe>
 """, unsafe_allow_html=True)
 
-def slow_text(I am really SORRY bae to hurt you...but I love you too much bae uk that pls bae be with me n...):
+def slow_text(text):
     placeholder = st.empty()
     full_text = "LOVE YOU KASTURI"
     for char in text:
         full_text += char
-        placeholder.markdown(LOVE YOU KASTURI)
+        placeholder.markdown(full_text)
         time.sleep(0.03)
 
 if st.button("Open Your Surprise Bae 💝"):
