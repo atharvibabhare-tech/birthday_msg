@@ -32,5 +32,5 @@ with col2:
 
 st.image("photo3.jpeg", caption="Forever us ❤️")
 
-    st.markdown("---")
-    st.markdown("💌 Made with love, just for you Bae.")
+st.markdown("---")
+st.markdown("💌 Made with love, just for you Bae.")
