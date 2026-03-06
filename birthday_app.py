@@ -62,18 +62,34 @@ if st.button("Open Your Surprise Bae 💝"):
 
     st.markdown("---")
 
-    if st.button("Why I Love You u everytime ask me 💖"):
-        st.write("""
-        💕 Your smile  
-        💕 Your eyes  
-        💕 Your strength  
-        💕 The way you kiss on my forehead and hold my hands
-        💕 The way you understand me sometimes hehe
-        💕 Everything about you. How can I forget this all happy and peacefull moments with you bae?
-        """)
+   # session states
+if "show_love" not in st.session_state:
+    st.session_state.show_love = False
 
-    st.markdown("---")
+if "show_forever" not in st.session_state:
+    st.session_state.show_forever = False
 
-    if st.button("Will you stay with me forever? "):
-        st.balloons()
-        st.success("I promise to always choose you. Always Bae, dont be scared if not as a couple but as a bestfriend...❤️")
+
+if st.button("Why I Love You 💖"):
+    st.session_state.show_love = True
+
+if st.session_state.show_love:
+    st.write("""
+    💕 Your smile  
+    💕 Your eyes 
+    💕 Your strength  
+    💕 The way you Kiss me on my forehead 
+    💕 The way you understand me  
+    💕 Everything about you
+    """)
+
+
+st.markdown("---")
+
+
+if st.button("Will you stay with me forever?"):
+    st.session_state.show_forever = True
+
+if st.session_state.show_forever:
+    st.balloons()
+    st.success("I promise to always choose you Always bae ❤️")
