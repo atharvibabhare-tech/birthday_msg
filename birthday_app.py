@@ -70,7 +70,7 @@ if "show_forever" not in st.session_state:
     st.session_state.show_forever = False
 
 
-if st.button("Why I Love You 💖"):
+if st.button("Why I Love You Everytime You Ask Me 💖"):
     st.session_state.show_love = True
 
 if st.session_state.show_love:
