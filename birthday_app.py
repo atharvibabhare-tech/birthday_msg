@@ -4,7 +4,7 @@ from datetime import datetime
 
 st.set_page_config(page_title=" Birthday Surprise Bae 💖", layout="centered")
 
-st.title("🎉 A Special Surprise For You Bae 🎁")
+st.title("🎉 A Special Surprise For You Bae ")
 
 name = st.text_input("From Atharvi💕")
 
