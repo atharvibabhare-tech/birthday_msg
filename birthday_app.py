@@ -2,18 +2,15 @@ import streamlit as st
 import time
 from datetime import datetime
 
-st.set_page_config(page_title="Birthday Surprise Bae 💖", layout="centered")
+st.set_page_config(page_title=" Birthday Surprise Bae 💖", layout="centered")
 
 st.title("🎉 A Special Surprise For You Bae 🎁")
 
 name = st.text_input("From Atharvi💕")
 
-# 🎵 Background Music 
-st.markdown("""
-<iframe width="0" height="0"
-src="https://www.youtube.com/embed/2Vv-BfVoq4g?autoplay=1"
-frameborder="0" allow="autoplay"></iframe>
-""", unsafe_allow_html=True)
+# 🎵 MUSIC BUTTON
+st.markdown("### 🎶 Click below to play our song")
+st.audio("perfect.mp3")
 
 def slow_text(text):
     placeholder = st.empty()
@@ -27,9 +24,9 @@ if st.button("Open Your Surprise Bae 💝"):
 
     st.balloons()
     st.snow()
-    time.sleep(1)
+    time.sleep(2)
 
-    st.markdown(f"## 🎂 Happy Birthday Kasturi 💖")
+    st.markdown("## 🎂 Happy Birthday Kasturi 💖")
     st.markdown("### You are the most precious person in my life 💕")
 
     slow_text("I am so lucky to have you.")
@@ -42,11 +39,11 @@ if st.button("Open Your Surprise Bae 💝"):
 
     st.markdown("## 💞 Our Journey of Friendship ")
 
-    start_date = datetime(2023, 11, 20)  # CHANGE THIS TO YOUR REAL DATE
+    start_date = datetime(2023, 11, 20)
     today = datetime.now()
     days_together = (today - start_date).days
 
-    st.success(f"We have been together for 3 beautiful years together and in those 3yrs too many things get change between us but one thing is common that will never change is SUPPORT for each other 💕")
+    st.success("We have been together for 3 beautiful years and one thing will never change — our SUPPORT for each other 💕")
 
     st.markdown("## 📸 Our Beautiful Memories")
 
@@ -62,7 +59,7 @@ if st.button("Open Your Surprise Bae 💝"):
 
     st.markdown("---")
 
-   # session states
+# session states
 if "show_love" not in st.session_state:
     st.session_state.show_love = False
 
@@ -70,26 +67,25 @@ if "show_forever" not in st.session_state:
     st.session_state.show_forever = False
 
 
-if st.button("Why I Love You Everytime You Ask Me 💖"):
+if st.button("Why I Love You? Everytime You Ask Me 💖"):
     st.session_state.show_love = True
 
 if st.session_state.show_love:
     st.write("""
-    💕 Your smile  
-    💕 Your eyes 
-    💕 Your strength  
-    💕 The way you Kiss me on my forehead 
-    💕 The way you understand me  
-    💕 Everything about you
-    """)
+💕 Your smile  
+💕 Your eyes  
+💕 Your Hugs 
+💕 The way you kiss my forehead  
+💕 The way you understand me  
+💕 I can LEAVE U but still come back to u...!!!
+""")
 
 
 st.markdown("---")
-
 
 if st.button("Will you stay with me forever?"):
     st.session_state.show_forever = True
 
 if st.session_state.show_forever:
     st.balloons()
-    st.success("I promise to always choose you Always bae ❤️")
+    st.success("I promise to always choose you bae , in future we may be not as a GF but as a Bestfriend Always ❤️")
