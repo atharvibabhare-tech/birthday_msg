@@ -10,7 +10,10 @@ name = st.text_input("From Atharvi💕")
 
 # 🎵 MUSIC BUTTON
 st.markdown("### 🎶 Click below to play our song")
-st.audio("perfect.mp3")
+audio_file = open("perfect.mp3", "rb")
+audio_bytes = audio_file.read()
+
+st.audio(audio_bytes, format="audio/mp3")
 
 def slow_text(text):
     placeholder = st.empty()
